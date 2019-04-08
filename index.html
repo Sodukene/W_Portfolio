@@ -14,7 +14,12 @@
        font-awesome is a library filled with icons to work with on the website, like a twitter icon for facebook icon. -->
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="main.css?9">
+
+  <!-- I'm using inspiration from an online CSS library to help me create containers as they're almost impossible to make. -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- This is my home-made stylesheet, I've added a ? after it to help tell the browser to refresh the CSS as sometimes the not-so-smart DNS servers don't update it. -->
+  <link rel="stylesheet" type="text/css" href="main.css?3">
 
   <!-- Loading scripts from google APIs for JQuery and another library for knowing how the page loads,
        useful for having a loading box on the website -->
@@ -26,13 +31,40 @@
 </head>
 
 <body>
+  <!-- Creating a Preloader so it shows an icon before loading the webpage. -->
+  <div class="preloader"></div>
+
   <div class="container">
-    <!-- Creating a Preloader so it shows an icon before loading the webpage. -->
-    <div class="preloader"></div>
-    
-    <p>aaaa</p>
-  
+    <div class="card-deck">
+      <div class="card bg-dark">
+        <img class="card-img-top" src="images/picklerick.gif" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Project 1</h4>
+          <p class="card-text">Blah</p>
+          <a href="#" class="btn btn-primary">Dab to find out more</a>
+        </div>
+      </div>
+      <div class="card bg-warning">
+        <div class="card-body text-center">
+          <p class="card-text">Some text inside the second card</p>
+        </div>
+      </div>
+      <div class="card bg-success">
+        <div class="card-body text-center">
+          <p class="card-text">Some text inside the third card</p>
+        </div>
+      </div>
+      <div class="card bg-danger">
+        <div class="card-body text-center">
+          <p class="card-text">Some text inside the fourth card</p>
+        </div>
+      </div>  
+    </div>
   </div>
+
+  </div>
+
+</div>
 
 <!-- The footer of the website, the content displayed at the bottom of the page. I'm also using Font-Awesome for the little icons.-->
 <div class="footer">
